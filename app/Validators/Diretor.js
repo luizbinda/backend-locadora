@@ -2,14 +2,14 @@
 
 const Antl = use("Antl");
 
-class Ator {
+class Diretor {
   get validateAll() {
     return true;
   }
 
   get rules() {
     return {
-      nome: "required|unique:ators",
+      nome: "required|unique:diretors",
     };
   }
 
@@ -18,4 +18,4 @@ class Ator {
   }
 }
 
-module.exports = Ator;
+module.exports = Diretor;

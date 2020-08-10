@@ -37,8 +37,8 @@ class ClasseController {
 
     const classe = await Classe.find(id);
 
-    Classe.merge(data);
-    await Classe.save();
+    classe.merge(data);
+    await classe.save();
 
     return classe;
   }

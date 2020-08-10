@@ -2,14 +2,16 @@
 
 const Antl = use("Antl");
 
-class Ator {
+class Classe {
   get validateAll() {
     return true;
   }
 
   get rules() {
     return {
-      nome: "required|unique:ators",
+      nome: "required|unique:classes",
+      valor: "required|number",
+      prazo_devolucao: "required",
     };
   }
 
@@ -18,4 +20,4 @@ class Ator {
   }
 }
 
-module.exports = Ator;
+module.exports = Classe;

@@ -2,14 +2,17 @@
 
 const Antl = use("Antl");
 
-class Ator {
+class Item {
   get validateAll() {
     return true;
   }
 
   get rules() {
     return {
-      nome: "required|unique:ators",
+      data_aquisicao: "required",
+      numSerie: "required",
+      tipo: "required",
+      titulo_id: "required",
     };
   }
 
@@ -18,4 +21,4 @@ class Ator {
   }
 }
 
-module.exports = Ator;
+module.exports = Item;

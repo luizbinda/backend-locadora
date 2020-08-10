@@ -33,8 +33,8 @@ class DiretorController {
 
     const diretor = await Diretor.find(id);
 
-    Diretor.merge(data);
-    await Diretor.save();
+    diretor.merge(data);
+    await diretor.save();
 
     return diretor;
   }

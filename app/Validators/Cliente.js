@@ -1,15 +1,16 @@
 "use strict";
-
 const Antl = use("Antl");
-
-class Ator {
+class Cliente {
   get validateAll() {
     return true;
   }
 
   get rules() {
     return {
-      nome: "required|unique:ators",
+      cpf: "unique:clientes",
+      nome: "required",
+      data_nascimento: "required",
+      sexo_id: "required",
     };
   }
 
@@ -18,4 +19,4 @@ class Ator {
   }
 }
 
-module.exports = Ator;
+module.exports = Cliente;
